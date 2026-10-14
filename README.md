@@ -1,17 +1,30 @@
-How to Run
+# Business Logic Threat Analyzer
 
-1. Install dependencies
+A Python-based security analysis tool that uses Groq LLMs to identify potential business logic threats from software system descriptions.
 
-pip install -r requirements_threat_analyzer.txt
+## Features
 
-2. Set your Groq API key (Windows PowerShell)
+- Extracts system entities, workflows, and business rules.
+- Identifies potential business logic threats.
+- Generates attack scenarios, severity, impact, and mitigations.
+- Returns structured JSON output.
+- Validates threat count and category coverage.
 
-$env:GROQ_API_KEY="your_groq_api_key"
+## Tech Stack
 
-3. Run the application
+- Python
+- Streamlit
+- Groq API
+- Large Language Models (LLMs)
 
-streamlit run threat_analyzer_demo.py
+## How to Run
 
-4. Open in your browser
+### 1. Install Dependencies
 
-Visit http://localhost:8501 and enter your software system description to generate a business logic threat analysis.
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+streamlit run demo.py
+```
